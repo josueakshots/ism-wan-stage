@@ -1,0 +1,10 @@
+{
+  "stage_id": "germani-ivy-defense",
+  "prompt": "Germani raises one hand and a glowing ivy barrier grows across the rain-lit alley entrance. Shadow soldiers stop beyond the vines. Keep her face and clothing consistent with the reference image.",
+  "character": "Germani, green-skinned Ivy Moon Queen, nature and moonlight powers; use the supplied artwork as appearance reference.",
+  "action": "cast",
+  "camera": "fixed",
+  "frames": 81,
+  "steps": 30,
+  "seed": 71
+}
