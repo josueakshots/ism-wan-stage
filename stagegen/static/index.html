@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ISM · Stage Studio</title><link rel="stylesheet" href="/static/style.css"></head>
+<body><main>
+<header><span class="eyebrow">ISM / VIDEO LAB</span><h1>Stage Studio</h1><p>Turn a scene idea into a short video. Continue from a finished clip to build the next beat.</p></header>
+<aside id="mode">Connect to check generation mode.</aside>
+<section class="connection"><label>Studio access key <input id="key" type="password" autocomplete="off" placeholder="Private administrator key"></label><button id="connect">Connect</button></section>
+<div class="columns"><form id="jobform">
+<label>Stage<select id="stage"><option value="">Custom scene</option></select></label>
+<p id="objective" class="muted"></p>
+<label>Character appearance<textarea id="character" maxlength="700" rows="2" placeholder="Describe the character and outfit; use a reference image for closer resemblance."></textarea></label>
+<label>Scene prompt<textarea id="prompt" required maxlength="3000" rows="5" placeholder="Describe one short action in the stage."></textarea></label>
+<label>Starting image<input id="image" type="file" accept="image/png,image/jpeg,image/webp"></label>
+<div class="row"><label>Action hint<select id="action"><option>observe</option><option>walk</option><option>run</option><option>dodge</option><option>cast</option><option>jump</option><option>drive</option></select></label>
+<label>Camera<select id="camera"><option>follow</option><option>fixed</option><option>orbit</option><option>wide</option></select></label></div>
+<div class="row"><label>Length<select id="frames"><option value="49">About 2 seconds</option><option value="81" selected>About 3.4 seconds</option><option value="121">About 5 seconds</option></select></label>
+<label>Seed<input id="seed" type="number" min="0" max="2147483647" value="42"></label></div>
+<label><input type="checkbox" id="continue" disabled> Continue from the last completed clip</label>
+<button id="generate" type="submit" disabled>Generate clip</button>
+<p class="muted">Actions are prompt suggestions. Generation is queued and may take minutes. Character and scene consistency can drift between clips.</p>
+</form><section class="result"><h2>Your clip</h2><p id="status" role="status">Waiting for a scene.</p><video id="video" controls playsinline hidden></video><a id="download" hidden>Download MP4</a><pre id="details"></pre></section></div>
+<footer>Private production studio · Single team access · Reference images remain on your configured servers.</footer>
+</main><script src="/static/app.js"></script></body></html>
