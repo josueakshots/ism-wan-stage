@@ -1,0 +1,20 @@
+[Unit]
+Description=ISM Wan GPU worker
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=stage
+WorkingDirectory=/opt/ism-wan-stage
+EnvironmentFile=/opt/ism-wan-stage/.env.worker
+ExecStartPre=/opt/stage-api-venv/bin/python /opt/ism-wan-stage/scripts/preflight.py
+ExecStart=/opt/stage-api-venv/bin/python -m stagegen.worker
+Restart=on-failure
+RestartSec=10
+KillMode=control-group
+TimeoutStopSec=30
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target
