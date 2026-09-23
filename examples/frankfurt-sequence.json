@@ -1,0 +1,8 @@
+{
+  "title": "Frankfurt Shadow Runs — three beat prototype",
+  "beats": [
+    {"request": {"stage_id":"germani-frankfurt-arrival", "prompt":"Germani walks toward a moonlit alley entrance. One continuous shot.", "character":"Germani has green skin, a flowing dark green outfit, and glowing ivy around her wrist.", "action":"walk", "camera":"follow", "frames":81, "seed":71}},
+    {"continue_previous":true, "request": {"stage_id":"germani-frankfurt-arrival", "prompt":"She pauses near the entrance as a distant shadow scout becomes visible.", "character":"Keep Germani's green skin and dark green outfit consistent.", "action":"observe", "camera":"fixed", "frames":81, "seed":72}},
+    {"continue_previous":true, "request": {"stage_id":"germani-ivy-defense", "prompt":"She raises one hand to grow a luminous ivy barrier between herself and the scout.", "character":"Keep Germani's green skin and dark green outfit consistent.", "action":"cast", "camera":"fixed", "frames":81, "seed":73}}
+  ]
+}
