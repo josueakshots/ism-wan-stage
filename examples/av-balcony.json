@@ -1,0 +1,10 @@
+{
+  "stage_id": "av-balcony-defense",
+  "prompt": "Emerald Onyx lands beside A.V. as one shadow soldier approaches. A.V. raises a luminous shield. Keep both women in frame, a single readable action, no cuts.",
+  "character": "Use uploaded reference artwork for A.V.; Emerald Onyx wears her established green and yellow hero suit.",
+  "action": "cast",
+  "camera": "wide",
+  "frames": 81,
+  "steps": 30,
+  "seed": 42
+}
